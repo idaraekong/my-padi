@@ -80,12 +80,16 @@ public class MainActivity extends AppCompatActivity {
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         ImageView network_status = (ImageView) findViewById(R.id.network_status);
         if (activeNetworkInfo != null && activeNetworkInfo.isConnectedOrConnecting()) {
-            //creating timer
-            Timer timer_interact=new Timer();
-            timer_interact.schedule(new TimerTask() {
-                @Override
-                public void run() {network_status.setBackgroundColor(Color.GREEN);}
-            }, 3000);
+           // do {
+                //creating timer
+                Timer timer_interact = new Timer();
+                timer_interact.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        network_status.setBackgroundColor(Color.GREEN);
+                    }
+                }, 3000);
+           // } while (true);
 
         } else {
                  network_status.setBackgroundColor(Color.RED);

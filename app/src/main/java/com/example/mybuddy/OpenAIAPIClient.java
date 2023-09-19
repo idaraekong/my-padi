@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 public class OpenAIAPIClient {
     private static final String BASE_URL = "https://api.openai.com/v1/";
     public interface OpenAIAPIService {
-        @Headers("Authorization: Bearer YOUR-OPENAPI-KEY-HERE")
+        @Headers("Authorization: Bearer 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")
         @POST("chat/completions")
         Call<OpenAIResponseModel> getCompletion(@Body OpenAIRequestModel requestModel);
     }
