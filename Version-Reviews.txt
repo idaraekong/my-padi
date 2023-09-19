@@ -1,0 +1,5 @@
+
+
+-network status still shows green, after network goes off
+-need to hide keyboard to see messages after being sent
+-

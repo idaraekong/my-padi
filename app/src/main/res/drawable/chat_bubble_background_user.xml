@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/teal_700"
+        android:alpha="0.30"/> <!-- Customize the color as per your design -->
+    <corners android:radius="16dp"
+        android:alpha="0.80"/> <!-- Customize the corner radius as per your design -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/purple_700"
+        /> <!-- Customize the border color as per your design -->
+
+</shape>
+
+<!--    #00FFFFFF-->
